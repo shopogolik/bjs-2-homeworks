@@ -10,11 +10,11 @@ function solveEquation(a, b, c) {
 
     } else if (d == 0) {
         x1 = -b / (2 * a);
-        return arr;
-        // array
+
     }
 
     arr.push(x1, x2);
+    return arr;
 }
 
 function calculateTotalMortgage(percent, contribution, amount, date) {
