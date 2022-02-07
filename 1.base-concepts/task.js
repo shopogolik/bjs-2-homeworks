@@ -19,8 +19,10 @@ function solveEquation(a, b, c) {
 
 function calculateTotalMortgage(percent, contribution, amount, date) {
     let totalAmount;
-
-    // код для задачи №2 писать здесь
+    let dateStart = new Date();
+    let dateEnd = new Date(date);
+    let S = amount - contribution;
+    totalAmount = S * ((percent + percent / (((1 + percent) ** (dateEnd / dateStart) - 1)))) / 100
 
     return totalAmount;
 }
