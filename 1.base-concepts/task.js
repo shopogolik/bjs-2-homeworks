@@ -7,13 +7,12 @@ function solveEquation(a, b, c) {
     if (d > 0) {
         x1 = (-b + Math.sqrt(d)) / (2 * a),
         x2 = (-b - Math.sqrt(d)) / (2 * a);
-
+        arr.push(x1, x2);
     } else if (d == 0) {
         x1 = -b / (2 * a);
-
+        arr.push(x1);
     }
 
-    arr.push(x1, x2);
     return arr;
 }
 
