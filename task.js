@@ -1,4 +1,5 @@
 // Задание 1
+
 function getArrayParams(arr) {
     let min = arr[0]
     let max = arr[0]
@@ -19,23 +20,32 @@ function getArrayParams(arr) {
 }
 
 // Задание 2
+
 function worker(arr) {
     let sum;
-
-    // Ваш код
-
+for (i = 0, i < arr.length; i++) {
+    sum += arr[i];
+}
     return sum;
 }
-
+var arrOfArr;
 function makeWork(arrOfArr, func) {
-    let max;
+    let max, sum;
+    max = 0;
+    sum = 0;
 
-    // Ваш кода
-    // for ...
+    for (i = 0; i < arrOfArr.length; i++) {
+        sum = func(arrOfArr[i]);
+        if (max < sum) {
+            max = sum;
+        }
 
     return max;
 }
 
+
 // Задание 3
-function worker2(arr) {// Ваш код
+    
+function worker2(arr) {
+    // Ваш код
 }
